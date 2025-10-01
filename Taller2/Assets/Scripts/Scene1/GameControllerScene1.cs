@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameControllerScene1 : MonoBehaviour
 {
@@ -19,7 +20,20 @@ public class GameControllerScene1 : MonoBehaviour
         Debug.Log("Tiempo de esta escena: " + timeScene1);
         //Debug.Log("Tiempo global acumulado: " + GameManager.Instance.Globaltime1);
     }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        if (collision.CompareTag("Player"))
+        {
+            GuardarTiempoEscena();
+            lectorEscena("Scene2");
+        }
+    }
+    public void lectorEscena(string nameScene)
+    {
+        SceneManager.LoadScene(nameScene);
+    }
     void Start()
     {
 
