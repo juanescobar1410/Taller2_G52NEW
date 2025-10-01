@@ -160,7 +160,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -253,9 +253,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 440
-        width: 33
-        height: 27
+        y: 441
+        width: 32
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,10 +274,10 @@ TextureImporter:
       name: env_ground_1
       rect:
         serializedVersion: 2
-        x: 47
-        y: 447
-        width: 21
-        height: 26
+        x: 48
+        y: 448
+        width: 19
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -296,10 +296,10 @@ TextureImporter:
       name: env_ground_2
       rect:
         serializedVersion: 2
-        x: 79
-        y: 447
-        width: 34
-        height: 31
+        x: 80
+        y: 448
+        width: 32
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -315,35 +315,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: env_ground_3
-      rect:
-        serializedVersion: 2
-        x: 81
-        y: 351
-        width: 80
-        height: 106
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b61b75203d649a820800000000000000
-      internalID: 2929950904672563563
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: env_ground_4
       rect:
         serializedVersion: 2
-        x: 159
-        y: 442
-        width: 66
-        height: 26
+        x: 160
+        y: 443
+        width: 64
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -362,10 +340,10 @@ TextureImporter:
       name: env_ground_5
       rect:
         serializedVersion: 2
-        x: 175
-        y: 431
-        width: 34
-        height: 26
+        x: 176
+        y: 432
+        width: 32
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -381,57 +359,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: env_ground_6
-      rect:
-        serializedVersion: 2
-        x: 223
-        y: 351
-        width: 80
-        height: 106
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a200101e0667375b0800000000000000
-      internalID: -5371819772058992598
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: env_ground_7
-      rect:
-        serializedVersion: 2
-        x: 272
-        y: 447
-        width: 32
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b27b1a7e770890b80800000000000000
-      internalID: -8428063975171573973
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: env_ground_8
       rect:
         serializedVersion: 2
-        x: 316
-        y: 447
-        width: 21
-        height: 26
+        x: 317
+        y: 448
+        width: 19
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -450,10 +384,10 @@ TextureImporter:
       name: env_ground_9
       rect:
         serializedVersion: 2
-        x: 351
-        y: 440
-        width: 34
-        height: 27
+        x: 352
+        y: 441
+        width: 32
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -472,10 +406,10 @@ TextureImporter:
       name: env_ground_10
       rect:
         serializedVersion: 2
-        x: 383
-        y: 434
-        width: 97
-        height: 46
+        x: 384
+        y: 435
+        width: 95
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -494,10 +428,10 @@ TextureImporter:
       name: env_ground_11
       rect:
         serializedVersion: 2
-        x: 15
-        y: 415
-        width: 66
-        height: 26
+        x: 16
+        y: 416
+        width: 64
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -516,10 +450,10 @@ TextureImporter:
       name: env_ground_12
       rect:
         serializedVersion: 2
-        x: 127
-        y: 399
-        width: 130
-        height: 27
+        x: 128
+        y: 400
+        width: 128
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -538,10 +472,10 @@ TextureImporter:
       name: env_ground_13
       rect:
         serializedVersion: 2
-        x: 303
-        y: 415
-        width: 66
-        height: 26
+        x: 304
+        y: 416
+        width: 64
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -560,10 +494,10 @@ TextureImporter:
       name: env_ground_14
       rect:
         serializedVersion: 2
-        x: 383
-        y: 392
-        width: 97
-        height: 41
+        x: 384
+        y: 393
+        width: 96
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -579,35 +513,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: env_ground_15
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 303
-        width: 165
-        height: 107
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a72e207b9a3a1b4c0800000000000000
-      internalID: -4273454622082669958
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: env_ground_16
       rect:
         serializedVersion: 2
-        x: 127
-        y: 367
-        width: 130
-        height: 26
+        x: 128
+        y: 368
+        width: 128
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -623,35 +535,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: env_ground_17
-      rect:
-        serializedVersion: 2
-        x: 191
-        y: 303
-        width: 181
-        height: 107
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2fe47ea7dfe8a6620800000000000000
-      internalID: 2768182140312440562
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: env_ground_18
       rect:
         serializedVersion: 2
-        x: 384
-        y: 338
-        width: 96
-        height: 47
+        x: 385
+        y: 339
+        width: 95
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -670,10 +560,10 @@ TextureImporter:
       name: env_ground_19
       rect:
         serializedVersion: 2
-        x: 383
-        y: 296
-        width: 97
-        height: 41
+        x: 384
+        y: 297
+        width: 96
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -693,9 +583,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 264
-        width: 33
-        height: 27
+        y: 265
+        width: 32
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -714,10 +604,10 @@ TextureImporter:
       name: env_ground_21
       rect:
         serializedVersion: 2
-        x: 47
-        y: 255
-        width: 21
-        height: 26
+        x: 48
+        y: 256
+        width: 19
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -733,35 +623,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: env_ground_22
-      rect:
-        serializedVersion: 2
-        x: 79
-        y: 255
-        width: 34
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 23732a78349228570800000000000000
-      internalID: 8467375619425056562
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: env_ground_23
       rect:
         serializedVersion: 2
-        x: 81
-        y: 159
-        width: 80
-        height: 106
+        x: 160
+        y: 251
+        width: 64
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -777,35 +645,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: env_ground_24
-      rect:
-        serializedVersion: 2
-        x: 159
-        y: 250
-        width: 66
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d8cca8b20e76b7670800000000000000
-      internalID: 8537531731111758989
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: env_ground_25
       rect:
         serializedVersion: 2
-        x: 175
-        y: 239
-        width: 34
-        height: 26
+        x: 317
+        y: 256
+        width: 19
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -824,10 +670,10 @@ TextureImporter:
       name: env_ground_26
       rect:
         serializedVersion: 2
-        x: 223
-        y: 159
-        width: 80
-        height: 106
+        x: 352
+        y: 265
+        width: 32
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -843,35 +689,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: env_ground_27
-      rect:
-        serializedVersion: 2
-        x: 272
-        y: 255
-        width: 32
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d486d0acaa7b242e0800000000000000
-      internalID: -2142948528512735155
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: env_ground_28
       rect:
         serializedVersion: 2
-        x: 316
-        y: 255
-        width: 21
-        height: 26
+        x: 16
+        y: 224
+        width: 64
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -890,10 +714,10 @@ TextureImporter:
       name: env_ground_29
       rect:
         serializedVersion: 2
-        x: 351
-        y: 264
-        width: 34
-        height: 27
+        x: 82
+        y: 160
+        width: 78
+        height: 104
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -912,10 +736,10 @@ TextureImporter:
       name: env_ground_30
       rect:
         serializedVersion: 2
-        x: 384
-        y: 242
-        width: 96
-        height: 47
+        x: 176
+        y: 240
+        width: 32
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -934,10 +758,10 @@ TextureImporter:
       name: env_ground_31
       rect:
         serializedVersion: 2
-        x: 15
-        y: 223
-        width: 66
-        height: 26
+        x: 224
+        y: 160
+        width: 78
+        height: 104
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -956,10 +780,10 @@ TextureImporter:
       name: env_ground_32
       rect:
         serializedVersion: 2
-        x: 127
-        y: 207
-        width: 130
-        height: 27
+        x: 304
+        y: 224
+        width: 64
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -978,10 +802,10 @@ TextureImporter:
       name: env_ground_33
       rect:
         serializedVersion: 2
-        x: 303
-        y: 223
-        width: 66
-        height: 26
+        x: 384
+        y: 201
+        width: 96
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1000,10 +824,10 @@ TextureImporter:
       name: env_ground_34
       rect:
         serializedVersion: 2
-        x: 383
-        y: 200
-        width: 97
-        height: 41
+        x: 13
+        y: 112
+        width: 163
+        height: 105
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1019,35 +843,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: env_ground_35
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 111
-        width: 165
-        height: 107
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e7655c4cb87f438a0800000000000000
-      internalID: -6326159396874922370
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: env_ground_36
       rect:
         serializedVersion: 2
-        x: 127
-        y: 175
-        width: 130
-        height: 26
+        x: 192
+        y: 112
+        width: 179
+        height: 105
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1063,35 +865,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: env_ground_37
-      rect:
-        serializedVersion: 2
-        x: 191
-        y: 111
-        width: 181
-        height: 107
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cc8269d6a821e4330800000000000000
-      internalID: 3696912729871100108
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: env_ground_38
       rect:
         serializedVersion: 2
-        x: 383
-        y: 146
-        width: 97
-        height: 47
+        x: 384
+        y: 147
+        width: 95
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1110,10 +890,10 @@ TextureImporter:
       name: env_ground_39
       rect:
         serializedVersion: 2
-        x: 383
-        y: 104
-        width: 97
-        height: 41
+        x: 384
+        y: 105
+        width: 96
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1132,10 +912,10 @@ TextureImporter:
       name: env_ground_40
       rect:
         serializedVersion: 2
-        x: 15
-        y: 47
-        width: 34
-        height: 34
+        x: 16
+        y: 48
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1154,10 +934,10 @@ TextureImporter:
       name: env_ground_41
       rect:
         serializedVersion: 2
-        x: 79
-        y: 37
-        width: 258
-        height: 34
+        x: 80
+        y: 38
+        width: 256
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1172,11 +952,231 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: env_ground_3
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 352
+        width: 78
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce4f99a399e3bfc4d9d8347997864142
+      internalID: 2929950904672563563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_ground_6
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 352
+        width: 78
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a30300360b8d003429d264e5b04dfafc
+      internalID: -5371819772058992598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_ground_7
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 448
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54a78b06e7c988e489ccf072953fe832
+      internalID: -8428063975171573973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_ground_15
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 304
+        width: 163
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c1466c81b2e99a45a7447b7c1ab590a
+      internalID: -4273454622082669958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_ground_17
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 304
+        width: 179
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83125a1a6700d8445832d3e25f0af306
+      internalID: 2768182140312440562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_ground_22
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 256
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4fe321755cdd7d4db16cf8e3658d8e6
+      internalID: 8467375619425056562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_ground_24
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 256
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3591ab0023397d4c9512a0785f9e9ca
+      internalID: 8537531731111758989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_ground_27
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 243
+        width: 95
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4c238f7f156c2b41b8602c08485916a
+      internalID: -2142948528512735155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_ground_35
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 208
+        width: 128
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b2edd84744cb1b499f3de98be19fe31
+      internalID: -6326159396874922370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_ground_37
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 176
+        width: 128
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d41b786e44893e040881038c5778ffa6
+      internalID: 3696912729871100108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3ba8e4d4c06b6294589de317945c5689
     internalID: 0
     vertices: []
     indices: 

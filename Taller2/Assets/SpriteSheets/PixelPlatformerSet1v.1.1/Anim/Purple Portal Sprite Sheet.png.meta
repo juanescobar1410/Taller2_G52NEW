@@ -177,10 +177,10 @@ TextureImporter:
       name: Purple Portal Sprite Sheet_0
       rect:
         serializedVersion: 2
-        x: 21
-        y: 134
-        width: 21
-        height: 43
+        x: 82
+        y: 133
+        width: 27
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,10 +199,10 @@ TextureImporter:
       name: Purple Portal Sprite Sheet_1
       rect:
         serializedVersion: 2
-        x: 86
-        y: 134
-        width: 21
-        height: 43
+        x: 18
+        y: 133
+        width: 27
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,7 +222,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 149
-        y: 134
+        y: 133
         width: 27
         height: 45
       alignment: 0
@@ -243,10 +243,10 @@ TextureImporter:
       name: Purple Portal Sprite Sheet_3
       rect:
         serializedVersion: 2
-        x: 209
-        y: 134
-        width: 32
-        height: 43
+        x: 210
+        y: 133
+        width: 27
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,10 +265,10 @@ TextureImporter:
       name: Purple Portal Sprite Sheet_4
       rect:
         serializedVersion: 2
-        x: 274
-        y: 134
+        x: 275
+        y: 133
         width: 27
-        height: 44
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -287,10 +287,10 @@ TextureImporter:
       name: Purple Portal Sprite Sheet_5
       rect:
         serializedVersion: 2
-        x: 332
-        y: 131
-        width: 30
-        height: 46
+        x: 338
+        y: 133
+        width: 27
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,9 +310,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 404
-        y: 134
-        width: 19
-        height: 42
+        y: 133
+        width: 27
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,10 +331,10 @@ TextureImporter:
       name: Purple Portal Sprite Sheet_7
       rect:
         serializedVersion: 2
-        x: 466
-        y: 134
-        width: 21
-        height: 43
+        x: 465
+        y: 133
+        width: 27
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -380,7 +380,7 @@ TextureImporter:
         width: 26
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -402,7 +402,7 @@ TextureImporter:
         width: 24
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -593,6 +593,7 @@ TextureImporter:
       Purple Portal Sprite Sheet_15: 3940960551971708277
       Purple Portal Sprite Sheet_16: -573200737274364046
       Purple Portal Sprite Sheet_17: 1143544843
+      Purple Portal Sprite Sheet_18: -801753468
       Purple Portal Sprite Sheet_2: 7701685673204356691
       Purple Portal Sprite Sheet_3: 7816005057387510459
       Purple Portal Sprite Sheet_4: 1583939405589128480
