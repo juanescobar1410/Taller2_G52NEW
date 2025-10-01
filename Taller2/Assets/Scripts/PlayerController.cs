@@ -7,12 +7,13 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public float jumpForce;
     public int MaxJumps;
-    public LayerMask FloorLayer;
+    public LayerMask Terrain;
 
     private new Rigidbody2D rigidbody;
     private BoxCollider2D boxCollider;
     private bool LookingRight = true;
     private int JumpCount;
+    private Animator Animation;
 
 
 
@@ -20,6 +21,7 @@ public class PlayerController : MonoBehaviour
     {
         rigidbody = GetComponent<Rigidbody2D>();
         boxCollider = GetComponent<BoxCollider2D>();
+        Animation = GetComponent<Animator>();
         JumpCount = MaxJumps;
     }
     void Update()
@@ -30,7 +32,7 @@ public class PlayerController : MonoBehaviour
 
     bool itsinFloor()
     {
-        RaycastHit2D raycast = Physics2D.BoxCast(boxCollider.bounds.center, new Vector2(boxCollider.bounds.size.x, boxCollider.bounds.size.y), 0f, Vector2.down, 0.1f, FloorLayer);
+        RaycastHit2D raycast = Physics2D.BoxCast(boxCollider.bounds.center, new Vector2(boxCollider.bounds.size.x, boxCollider.bounds.size.y), 0f, Vector2.down, 0.1f, Terrain);
         return raycast.collider != null;
     }
     void JumpProccess()
@@ -39,7 +41,11 @@ public class PlayerController : MonoBehaviour
         if (itsinFloor())
         {
             JumpCount = MaxJumps;
-
+            Animation.SetBool("IsJumping", false);
+        }
+        else
+        {
+            Animation.SetBool("IsJumping", true);
         }
 
 
@@ -54,6 +60,15 @@ public class PlayerController : MonoBehaviour
     void MovementProccess()
     {
         float InputMovement = Input.GetAxis("Horizontal");
+
+        if (InputMovement != 0f)
+        {
+            Animation.SetBool("IsRunning", true);
+        }
+        else
+        {
+            Animation.SetBool("IsRunning", false);
+        }
 
         rigidbody.linearVelocity = new Vector2(InputMovement * speed, rigidbody.linearVelocity.y);
 
