@@ -37,15 +37,22 @@ public class PlayerController : MonoBehaviour
     }
     void JumpProccess()
     {
+        float velocityY = rigidbody.linearVelocity.y;
+
+        
+        if (Mathf.Abs(velocityY) < 0.01f)
+            velocityY = 0f;
+
+        Animation.SetFloat("JumpVelocity", velocityY);
 
         if (itsinFloor())
         {
             JumpCount = MaxJumps;
-            Animation.SetBool("IsJumping", false);
+            Animation.SetBool("IsGrounded", true);
         }
         else
         {
-            Animation.SetBool("IsJumping", true);
+            Animation.SetBool("IsGrounded", false);
         }
 
 
