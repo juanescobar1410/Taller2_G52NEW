@@ -27,6 +27,8 @@ public class GameManager : MonoBehaviour
         Debug.Log("Tiempo global acumulado: " + Globaltime);
     }
 
+    
+
     void Start()
     {
         

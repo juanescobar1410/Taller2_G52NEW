@@ -199,7 +199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2.5
-  jumpForce: 3
+  jumpForce: 3.5
   MaxJumps: 2
   Terrain:
     serializedVersion: 2
