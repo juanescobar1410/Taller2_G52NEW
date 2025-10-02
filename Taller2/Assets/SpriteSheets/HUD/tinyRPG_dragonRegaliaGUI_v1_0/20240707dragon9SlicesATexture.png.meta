@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 9bc3385e54af7554bb9ce1635f599115
+guid: 9a7cb3227087e784183c1e16635c0fd5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1264877717251755983
-    second: Fire_Warrior_Portrait_0
+      213: -2455923911838539156
+    second: 20240707dragon9SlicesATexture_0
+  - first:
+      213: 1815414549005031956
+    second: 20240707dragon9SlicesATexture_1
+  - first:
+      213: -1082587640192642021
+    second: 20240707dragon9SlicesATexture_2
+  - first:
+      213: 8173743973665096062
+    second: 20240707dragon9SlicesATexture_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -126,13 +135,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fire_Warrior_Portrait_0
+      name: 20240707dragon9SlicesATexture_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 59
-        height: 64
+        y: 3
+        width: 144
+        height: 138
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +150,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fcf091d059fbd8110800000000000000
-      internalID: 1264877717251755983
+      spriteID: c62e977d63ecaedd0800000000000000
+      internalID: -2455923911838539156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20240707dragon9SlicesATexture_1
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 54
+        width: 19
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41a5581f9e5a13910800000000000000
+      internalID: 1815414549005031956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20240707dragon9SlicesATexture_2
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 2
+        width: 42
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b14d61ce640e9f0f0800000000000000
+      internalID: -1082587640192642021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20240707dragon9SlicesATexture_3
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 25
+        width: 42
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e714c4376d8fe6170800000000000000
+      internalID: 8173743973665096062
       vertices: []
       indices: 
       edges: []
@@ -160,8 +235,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Fire_Warrior_Portrait_0: 1264877717251755983
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 9bc3385e54af7554bb9ce1635f599115
+guid: 553f66ddcf7ce004bb430e515ef223d8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1264877717251755983
-    second: Fire_Warrior_Portrait_0
+      213: -3171615984295063492
+    second: 20240713dragonCloseButton-Sheet_0
+  - first:
+      213: 4585375391630975308
+    second: 20240713dragonCloseButton-Sheet_1
+  - first:
+      213: 2914051548177543825
+    second: 20240713dragonCloseButton-Sheet_2
+  - first:
+      213: 589551991968827884
+    second: 20240713dragonCloseButton-Sheet_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -126,13 +135,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fire_Warrior_Portrait_0
+      name: 20240713dragonCloseButton-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 59
-        height: 64
+        width: 25
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +150,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fcf091d059fbd8110800000000000000
-      internalID: 1264877717251755983
+      spriteID: c305424f0182cf3d0800000000000000
+      internalID: -3171615984295063492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20240713dragonCloseButton-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c416bf3df9682af30800000000000000
+      internalID: 4585375391630975308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20240713dragonCloseButton-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 192bc4a917ac07820800000000000000
+      internalID: 2914051548177543825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20240713dragonCloseButton-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce90de1c9628e2800800000000000000
+      internalID: 589551991968827884
       vertices: []
       indices: 
       edges: []
@@ -160,8 +235,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Fire_Warrior_Portrait_0: 1264877717251755983
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

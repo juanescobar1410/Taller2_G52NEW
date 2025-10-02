@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 9bc3385e54af7554bb9ce1635f599115
+guid: d50091d121bacf9438946c0f019bbca1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1264877717251755983
-    second: Fire_Warrior_Portrait_0
+      213: -651698730587966105
+    second: 20240711dragonCursorTarget-Sheet_0
+  - first:
+      213: -7494072855970798902
+    second: 20240711dragonCursorTarget-Sheet_1
+  - first:
+      213: 3070435347185166896
+    second: 20240711dragonCursorTarget-Sheet_2
+  - first:
+      213: 3037821428703130965
+    second: 20240711dragonCursorTarget-Sheet_3
+  - first:
+      213: 4596740431812852198
+    second: 20240711dragonCursorTarget-Sheet_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +138,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fire_Warrior_Portrait_0
+      name: 20240711dragonCursorTarget-Sheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 59
-        height: 64
+        x: 1
+        y: 2
+        width: 62
+        height: 81
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +153,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fcf091d059fbd8110800000000000000
-      internalID: 1264877717251755983
+      spriteID: 7653bb61573b4f6f0800000000000000
+      internalID: -651698730587966105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20240711dragonCursorTarget-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 2
+        width: 62
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac2a6fa5174bff790800000000000000
+      internalID: -7494072855970798902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20240711dragonCursorTarget-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 2
+        width: 62
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03a66ce2ea06c9a20800000000000000
+      internalID: 3070435347185166896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20240711dragonCursorTarget-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5557bec8e72882a20800000000000000
+      internalID: 3037821428703130965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20240711dragonCursorTarget-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 0
+        width: 65
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e971e27117eacf30800000000000000
+      internalID: 4596740431812852198
       vertices: []
       indices: 
       edges: []
@@ -161,7 +261,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Fire_Warrior_Portrait_0: 1264877717251755983
+      20240711dragonCursorTarget-Sheet_0: -651698730587966105
+      20240711dragonCursorTarget-Sheet_1: -7494072855970798902
+      20240711dragonCursorTarget-Sheet_2: 3070435347185166896
+      20240711dragonCursorTarget-Sheet_3: 3037821428703130965
+      20240711dragonCursorTarget-Sheet_4: 4596740431812852198
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

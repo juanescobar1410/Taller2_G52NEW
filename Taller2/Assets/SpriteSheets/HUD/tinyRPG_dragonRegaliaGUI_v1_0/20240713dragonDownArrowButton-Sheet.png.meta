@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 9bc3385e54af7554bb9ce1635f599115
+guid: b14f95aa1defdfc42a894105b6dd5694
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1264877717251755983
-    second: Fire_Warrior_Portrait_0
+      213: -8060728180418609965
+    second: 20240713dragonDownArrowButton-Sheet_0
+  - first:
+      213: -4459429420237586047
+    second: 20240713dragonDownArrowButton-Sheet_1
+  - first:
+      213: -4949320134234876530
+    second: 20240713dragonDownArrowButton-Sheet_2
+  - first:
+      213: -8023191203052347508
+    second: 20240713dragonDownArrowButton-Sheet_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -126,13 +135,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fire_Warrior_Portrait_0
+      name: 20240713dragonDownArrowButton-Sheet_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 0
-        width: 59
-        height: 64
+        width: 15
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +150,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fcf091d059fbd8110800000000000000
-      internalID: 1264877717251755983
+      spriteID: 3dcfa2f6d6a822090800000000000000
+      internalID: -8060728180418609965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20240713dragonDownArrowButton-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 0
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18100d1c19cec12c0800000000000000
+      internalID: -4459429420237586047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20240713dragonDownArrowButton-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 0
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e85dd3f7f8b705bb0800000000000000
+      internalID: -4949320134234876530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20240713dragonDownArrowButton-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 0
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8f96090c16e7a090800000000000000
+      internalID: -8023191203052347508
       vertices: []
       indices: 
       edges: []
@@ -160,8 +235,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Fire_Warrior_Portrait_0: 1264877717251755983
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

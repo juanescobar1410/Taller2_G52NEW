@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 9bc3385e54af7554bb9ce1635f599115
+guid: dfa94de479bb97d4e97e92885c4b21a8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1264877717251755983
-    second: Fire_Warrior_Portrait_0
+      213: -8264991098617365171
+    second: 20240711dragonHorizontalCursorA-Sheet_0
+  - first:
+      213: -8865431207387135179
+    second: 20240711dragonHorizontalCursorA-Sheet_1
+  - first:
+      213: 1622009348320624430
+    second: 20240711dragonHorizontalCursorA-Sheet_2
+  - first:
+      213: 1991847655617835818
+    second: 20240711dragonHorizontalCursorA-Sheet_3
+  - first:
+      213: -8032542663737537215
+    second: 20240711dragonHorizontalCursorA-Sheet_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +49,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -126,13 +138,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fire_Warrior_Portrait_0
+      name: 20240711dragonHorizontalCursorA-Sheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 59
-        height: 64
+        x: 1
+        y: 1
+        width: 23
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +153,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fcf091d059fbd8110800000000000000
-      internalID: 1264877717251755983
+      spriteID: d4d7527b26adc4d80800000000000000
+      internalID: -8264991098617365171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20240711dragonHorizontalCursorA-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 1
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5330707b949a7f480800000000000000
+      internalID: -8865431207387135179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20240711dragonHorizontalCursorA-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 1
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2f730598e8828610800000000000000
+      internalID: 1622009348320624430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20240711dragonHorizontalCursorA-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 0
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a23bbc7b3e674ab10800000000000000
+      internalID: 1991847655617835818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20240711dragonHorizontalCursorA-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 1
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14d01cc610da68090800000000000000
+      internalID: -8032542663737537215
       vertices: []
       indices: 
       edges: []
@@ -160,8 +260,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Fire_Warrior_Portrait_0: 1264877717251755983
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
