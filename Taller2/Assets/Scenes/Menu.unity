@@ -330,6 +330,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 969ffb461d3bd0b47a7d6238c6d0b1b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  txtMonedas: {fileID: 1519003459}
+  txtPociones: {fileID: 1519003460}
+  txtLlaves: {fileID: 1519003458}
 --- !u!4 &1451523043
 Transform:
   m_ObjectHideFlags: 0
@@ -460,6 +463,39 @@ PrefabInstance:
       addedObject: {fileID: 1813550221}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03b161dad3396ed489e2c60afa5397e8, type: 3}
+--- !u!114 &1519003458 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6532467121458426789, guid: 03b161dad3396ed489e2c60afa5397e8, type: 3}
+  m_PrefabInstance: {fileID: 1519003457}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1519003459 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7850580505927505973, guid: 03b161dad3396ed489e2c60afa5397e8, type: 3}
+  m_PrefabInstance: {fileID: 1519003457}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1519003460 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 988445623100796379, guid: 03b161dad3396ed489e2c60afa5397e8, type: 3}
+  m_PrefabInstance: {fileID: 1519003457}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1670293755
 GameObject:
   m_ObjectHideFlags: 0

@@ -25,7 +25,7 @@ public class CollectibleItem : MonoBehaviour
             Debug.Log("Name item " + itemName + "value item " + itemValue);
             if (GameManager.Instance != null)
             {
-                GameManager.Instance.AñadirFruta(itemName, itemValue);
+                GameManager.Instance.AñadirItem(itemName, itemValue);
             }
             Destroy(gameObject);
         }

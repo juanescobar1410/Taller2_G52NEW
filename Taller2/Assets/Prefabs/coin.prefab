@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1872492363628738303}
   - component: {fileID: 5976598088130925172}
   - component: {fileID: 773212630583719709}
+  - component: {fileID: 3736185657406745027}
   m_Layer: 0
   m_Name: coin
   m_TagString: Untagged
@@ -28,8 +29,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.19, y: 0.19, z: 0.19}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -125,3 +126,17 @@ CapsuleCollider2D:
   m_Offset: {x: 0.012366116, y: -0.012366116}
   m_Size: {x: 0.87015593, y: 0.87015593}
   m_Direction: 0
+--- !u!114 &3736185657406745027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2361579316835337476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b60aa43f22fd294da8f7a0086536dce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Moneda
+  itemValue: 2
