@@ -41,5 +41,14 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Fondo
+    uniqueID: 2484126441
+    locked: 0
+  - name: PJ
+    uniqueID: 1504110503
+    locked: 0
+  - name: Suelo
+    uniqueID: 2040264477
+    locked: 0
   m_RenderingLayers:
   - Default
