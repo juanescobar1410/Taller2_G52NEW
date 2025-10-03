@@ -3364,6 +3364,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9078871917081917368, guid: 5bb64b69f9dff4b45a750d84cfb32388, type: 3}
+      propertyPath: fireballPrefab
+      value: 
+      objectReference: {fileID: 1437732779545902505, guid: ddf6c7f1052f2f74aa271ed8e43ff4bd, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
