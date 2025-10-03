@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: f06d6d52aeb9583409025a528785bc3b
+guid: 1e3a4de26d2781e4da124e609a3a7649
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2196774044669125446
-    second: 20240709dragonButtonA-Sheet_0
-  - first:
-      213: -7140346450691633759
-    second: 20240709dragonButtonA-Sheet_1
-  - first:
-      213: 1050089363484800247
-    second: 20240709dragonButtonA-Sheet_2
-  - first:
-      213: -7405766189749433570
-    second: 20240709dragonButtonA-Sheet_3
+      213: -5130558894233647175
+    second: Fondo_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -135,35 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 20240709dragonButtonA-Sheet_0
+      name: Fondo_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1
-        width: 98
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6432d48ca528c7e10800000000000000
-      internalID: 2196774044669125446
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 20240709dragonButtonA-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 100
+        x: 0
         y: 0
-        width: 100
-        height: 35
+        width: 736
+        height: 420
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,52 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1adcd49fbb468ec90800000000000000
-      internalID: -7140346450691633759
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 20240709dragonButtonA-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 202
-        y: 2
-        width: 96
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7f47de466baa29e00800000000000000
-      internalID: 1050089363484800247
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 20240709dragonButtonA-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 303
-        y: 3
-        width: 94
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e1b036a43ee693990800000000000000
-      internalID: -7405766189749433570
+      spriteID: 9b78bf95ed79cc8b0800000000000000
+      internalID: -5130558894233647175
       vertices: []
       indices: 
       edges: []
@@ -235,11 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      20240709dragonButtonA-Sheet_0: 2196774044669125446
-      20240709dragonButtonA-Sheet_1: -7140346450691633759
-      20240709dragonButtonA-Sheet_2: 1050089363484800247
-      20240709dragonButtonA-Sheet_3: -7405766189749433570
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
