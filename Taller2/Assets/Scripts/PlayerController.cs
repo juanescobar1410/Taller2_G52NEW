@@ -9,7 +9,8 @@ public class PlayerController : MonoBehaviour
     public int MaxJumps;
     public LayerMask Terrain;
     public GameObject fireballPrefab;
-    
+    public AudioClip jumpSound;
+
     private new Rigidbody2D rigidbody;
     private BoxCollider2D boxCollider;
     private bool LookingRight = true;
@@ -63,6 +64,7 @@ public class PlayerController : MonoBehaviour
             JumpCount--;
             rigidbody.linearVelocity = new Vector2(rigidbody.linearVelocity.x, 0f);
             rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            AudioManager.Instance.ReproducirSonido(jumpSound);
         }
     }
 
