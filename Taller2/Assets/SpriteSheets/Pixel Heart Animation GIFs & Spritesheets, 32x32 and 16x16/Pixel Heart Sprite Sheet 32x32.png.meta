@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: b14f95aa1defdfc42a894105b6dd5694
+guid: 6766bfa1aea732d49b8f75d0b4e126ba
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8060728180418609965
-    second: 20240713dragonDownArrowButton-Sheet_0
+      213: 9139294957729004389
+    second: Pixel Heart Sprite Sheet 32x32_0
   - first:
-      213: -4459429420237586047
-    second: 20240713dragonDownArrowButton-Sheet_1
+      213: -7234348896261954332
+    second: Pixel Heart Sprite Sheet 32x32_1
   - first:
-      213: -4949320134234876530
-    second: 20240713dragonDownArrowButton-Sheet_2
-  - first:
-      213: -8023191203052347508
-    second: 20240713dragonDownArrowButton-Sheet_3
+      213: 4458994651616342869
+    second: Pixel Heart Sprite Sheet 32x32_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -135,13 +132,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 20240713dragonDownArrowButton-Sheet_0
+      name: Pixel Heart Sprite Sheet 32x32_0
       rect:
         serializedVersion: 2
         x: 1
-        y: 0
-        width: 15
-        height: 15
+        y: 3
+        width: 30
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,42 +147,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3dcfa2f6d6a822090800000000000000
-      internalID: -8060728180418609965
+      spriteID: 56bb4fc875c45de70800000000000000
+      internalID: 9139294957729004389
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 20240713dragonDownArrowButton-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 17
-        y: 0
-        width: 15
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 18100d1c19cec12c0800000000000000
-      internalID: -4459429420237586047
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 20240713dragonDownArrowButton-Sheet_2
+      name: Pixel Heart Sprite Sheet 32x32_1
       rect:
         serializedVersion: 2
         x: 33
-        y: 0
-        width: 15
-        height: 14
+        y: 3
+        width: 30
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +169,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e85dd3f7f8b705bb0800000000000000
-      internalID: -4949320134234876530
+      spriteID: 4e42111120e6a9b90800000000000000
+      internalID: -7234348896261954332
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 20240713dragonDownArrowButton-Sheet_3
+      name: Pixel Heart Sprite Sheet 32x32_2
       rect:
         serializedVersion: 2
-        x: 49
-        y: 0
-        width: 15
-        height: 13
+        x: 65
+        y: 3
+        width: 30
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,8 +191,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c8f96090c16e7a090800000000000000
-      internalID: -8023191203052347508
+      spriteID: 55375f8c20881ed30800000000000000
+      internalID: 4458994651616342869
       vertices: []
       indices: 
       edges: []
@@ -236,10 +211,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      20240713dragonDownArrowButton-Sheet_0: -8060728180418609965
-      20240713dragonDownArrowButton-Sheet_1: -4459429420237586047
-      20240713dragonDownArrowButton-Sheet_2: -4949320134234876530
-      20240713dragonDownArrowButton-Sheet_3: -8023191203052347508
+      Pixel Heart Sprite Sheet 32x32_0: 9139294957729004389
+      Pixel Heart Sprite Sheet 32x32_1: -7234348896261954332
+      Pixel Heart Sprite Sheet 32x32_2: 4458994651616342869
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
