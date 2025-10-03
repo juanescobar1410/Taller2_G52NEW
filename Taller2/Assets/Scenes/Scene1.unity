@@ -345,6 +345,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03b161dad3396ed489e2c60afa5397e8, type: 3}
+--- !u!114 &127069143 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4014074662161417834, guid: 03b161dad3396ed489e2c60afa5397e8, type: 3}
+  m_PrefabInstance: {fileID: 127069142}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fb6a2d4e6821c6458599ab5c9dac58c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &155780672
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15721,6 +15732,18 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1178488658399946308, guid: 5bb64b69f9dff4b45a750d84cfb32388, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1178488658399946308, guid: 5bb64b69f9dff4b45a750d84cfb32388, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1178488658399946308, guid: 5bb64b69f9dff4b45a750d84cfb32388, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1596420196748953788, guid: 5bb64b69f9dff4b45a750d84cfb32388, type: 3}
       propertyPath: m_Constraints
       value: 4
@@ -25762,7 +25785,7 @@ PrefabInstance:
     - target: {fileID: 9072691383543204921, guid: d329491443af29b4a932af06e5562dcd, type: 3}
       propertyPath: tiempoEscena
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 127069143}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
