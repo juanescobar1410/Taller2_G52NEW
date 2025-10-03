@@ -235,7 +235,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      20240713dragonRightArrowButton-Sheet_0: -5724029481980645938
+      20240713dragonRightArrowButton-Sheet_1: -8713867955442861774
+      20240713dragonRightArrowButton-Sheet_2: -8173939668097307871
+      20240713dragonRightArrowButton-Sheet_3: -91764594397261738
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

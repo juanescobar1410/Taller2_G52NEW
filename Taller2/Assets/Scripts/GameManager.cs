@@ -7,6 +7,7 @@ using UnityEngine.UIElements;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+    public static bool FireballinScene = false;
 
     private float Globaltime = 0;
     public float Globaltime1 { get => Globaltime; set => Globaltime = value; }
