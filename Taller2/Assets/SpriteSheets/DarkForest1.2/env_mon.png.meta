@@ -85,7 +85,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -377,7 +377,7 @@ TextureImporter:
         serializedVersion: 2
         x: 32
         y: 0
-        width: 65
+        width: 30
         height: 113
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -679,6 +679,50 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: env_mon_23
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 148
+        width: 68
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 393211b6df3a2174e8545b3c23026bcb
+      internalID: 1499496366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: env_mon_24
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 0
+        width: 34
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d28944692ca2e94a99ee648908d85c8
+      internalID: -1569845815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -709,6 +753,8 @@ TextureImporter:
       env_mon_20: -1182099421
       env_mon_21: 584353883
       env_mon_22: 1544510112
+      env_mon_23: 1499496366
+      env_mon_24: -1569845815
       env_mon_3: -2904528127585307004
       env_mon_4: -6668294397942542763
       env_mon_5: -215733659847922012

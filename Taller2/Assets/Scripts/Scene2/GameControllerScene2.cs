@@ -1,10 +1,11 @@
+using TMPro;
 using UnityEngine;
 
 public class GameControllerScene2 : MonoBehaviour
 {
     public Timer tiempoEscena;
-
-
+    public GameObject panelResultados;
+    public TextMeshProUGUI txtTiempoGlobal;
 
 
     public void GuardarTiempoEscena()
@@ -28,36 +29,36 @@ public class GameControllerScene2 : MonoBehaviour
             GuardarTiempoEscena();
             Time.timeScale = 0f;
 
-            //panelResultados.SetActive(true);
+            panelResultados.SetActive(true);
 
-            //ActualizarResultados();
+            ActualizarResultados();
 
             // Mostrar resultados en consola también
             //Debug.Log($"Resultados: Cerezas={GameManager.Instance.Cerezas}, Sandías={GameManager.Instance.Sandias}");
         }
     }
-    //public void ActualizarResultados()
-    //{
-    //    if (GameManager.Instance != null)
-    //    {
-    //        // Lee los contadores de GameManager
-    //        int totalCerezas = GameManager.Instance.Cerezas;
-    //        int totalSandias = GameManager.Instance.Sandias;
-    //        float tiempo = GameManager.Instance.Globaltime1;
+    public void ActualizarResultados()
+    {
+        if (GameManager.Instance != null)
+        {
+            // Lee los contadores de GameManager
+            //int totalCerezas = GameManager.Instance.Cerezas;
+            //int totalSandias = GameManager.Instance.Sandias;
+            float tiempo = GameManager.Instance.Globaltime1;
 
-    //        // Muestra en los textos
-    //        txtCerezas.text = totalCerezas.ToString();
-    //        txtSandias.text = totalSandias.ToString();
-    //        txtTiempoGlobal.text = tiempo.ToString("F2");
+            // Muestra en los textos
+            //txtCerezas.text = totalCerezas.ToString();
+            //txtSandias.text = totalSandias.ToString();
+            txtTiempoGlobal.text = tiempo.ToString("F2");
 
-    //        Debug.Log("Resultados cargados en el panel");
-    //    }
-    //    else
-    //    {
-    //        Debug.LogError(" No existe GameManager en la escena.");
-    //    }
-    //}
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+            Debug.Log("Resultados cargados en el panel");
+        }
+        else
+        {
+            Debug.LogError(" No existe GameManager en la escena.");
+        }
+    }
+    //Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         
