@@ -8,12 +8,14 @@ public class PlayerController : MonoBehaviour
     public float jumpForce;
     public int MaxJumps;
     public LayerMask Terrain;
-
+    public GameObject fireballPrefab;
+    
     private new Rigidbody2D rigidbody;
     private BoxCollider2D boxCollider;
     private bool LookingRight = true;
     private int JumpCount;
     private Animator Animation;
+    
 
 
 
@@ -28,6 +30,7 @@ public class PlayerController : MonoBehaviour
     {
         MovementProccess();
         JumpProccess();
+        LaunchFireball();
     }
 
     bool itsinFloor()
@@ -88,6 +91,15 @@ public class PlayerController : MonoBehaviour
         {
             LookingRight = !LookingRight;
             transform.localScale = new Vector2(-transform.localScale.x, transform.localScale.y);
+        }
+    }
+
+    void LaunchFireball()
+    {
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+          GameObject fireball = Instantiate(fireballPrefab, transform.position, Quaternion.identity);
+          fireball.GetComponent<Fireball>().direction = LookingRight ? 1 : -1;
         }
     }
 }
