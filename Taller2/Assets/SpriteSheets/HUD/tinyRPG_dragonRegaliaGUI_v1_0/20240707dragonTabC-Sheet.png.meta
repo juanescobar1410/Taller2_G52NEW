@@ -210,7 +210,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      20240707dragonTabC-Sheet_0: -8759447546116525926
+      20240707dragonTabC-Sheet_1: -4082613537557461506
+      20240707dragonTabC-Sheet_2: 3029539493606123430
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

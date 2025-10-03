@@ -15,8 +15,7 @@ public class PlayerController : MonoBehaviour
     private bool LookingRight = true;
     private int JumpCount;
     private Animator Animation;
-    
-
+    private GameObject currentFireball = null;
 
 
     void Start()
@@ -96,12 +95,18 @@ public class PlayerController : MonoBehaviour
 
     void LaunchFireball()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.F) && currentFireball == null)
         {
-          GameObject fireball = Instantiate(fireballPrefab, transform.position, Quaternion.identity);
-          fireball.GetComponent<Fireball>().direction = LookingRight ? 1 : -1;
+            currentFireball = Instantiate(fireballPrefab, transform.position, Quaternion.identity);
+            currentFireball.GetComponent<Fireball>().direction = LookingRight ? 1 : -1;
         }
     }
+
+    public void ClearFireball()
+    {
+        currentFireball = null;
+    }
+
 }
 
 

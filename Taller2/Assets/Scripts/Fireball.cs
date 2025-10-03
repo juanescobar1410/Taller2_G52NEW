@@ -35,10 +35,20 @@ public class Fireball : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.layer == LayerMask.NameToLayer("Terrain") || collision.gameObject.layer == LayerMask.NameToLayer("Enemy"))
+        if(collision.gameObject.layer == LayerMask.NameToLayer("Terrain"))
         {
             Destroy(gameObject);
         }
            
     }
+
+    private void OnDestroy()
+    {
+        PlayerController player = Object.FindFirstObjectByType<PlayerController>();
+        if (player != null)
+        {
+            player.ClearFireball();
+        }
+    }
+
 }
