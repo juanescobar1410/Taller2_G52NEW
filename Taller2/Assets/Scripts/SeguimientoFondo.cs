@@ -7,16 +7,19 @@ public class SeguimientoFondo : MonoBehaviour
     [SerializeField]private Vector2 velocidadMovimiento;
     private Vector2 calculo;
     private Material material;
-
+    private Rigidbody2D jugadorRB;
     private void Awake()
     {
         material = GetComponent<SpriteRenderer>().material;
-    }
+
+        jugadorRB = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>();
+
+    }   
 
     // Update is called once per frame
     void Update()
     {
-        calculo = velocidadMovimiento * Time.deltaTime;
+        calculo = (jugadorRB.linearVelocity.x* 0.1f)*velocidadMovimiento * Time.deltaTime;
         material.mainTextureOffset += calculo;
     }
 }

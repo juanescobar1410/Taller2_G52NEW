@@ -3,6 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class LoaderScenes : MonoBehaviour
 {
+
+    public GameObject PanelInstrucciones;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,6 +22,13 @@ public class LoaderScenes : MonoBehaviour
         SceneManager.LoadScene(nameScene);
     }
 
+    public void mostrarPanel()
+    {
+        PanelInstrucciones.SetActive(true);
+    }
 
-
+    public void cerrarPanel()
+    {
+        PanelInstrucciones.SetActive(false);
+    }
 }
