@@ -4,6 +4,9 @@ public class CollectibleItem : MonoBehaviour
 {
     public string itemName;
     public int itemValue;
+    public AudioClip collectSoundMoneda;
+    public AudioClip collectSoundPocion;
+    public AudioClip collectSoundLlave;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -28,6 +31,10 @@ public class CollectibleItem : MonoBehaviour
                 GameManager.Instance.AñadirItem(itemName, itemValue);
             }
             Destroy(gameObject);
+            AudioManager.Instance.ReproducirSonido(
+                itemName == "Moneda" ? collectSoundMoneda :
+                itemName == "Pocion" ? collectSoundPocion :
+                itemName == "Llave" ? collectSoundLlave : null);
         }
     }
 }
