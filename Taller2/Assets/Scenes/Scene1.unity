@@ -154,7 +154,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: a90afc3379f9b2743b65fb5b18278e17, type: 3}
   m_Resource: {fileID: 8300000, guid: a90afc3379f9b2743b65fb5b18278e17, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.242
+  m_Volume: 0.093
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -15880,7 +15880,7 @@ PrefabInstance:
     - target: {fileID: 9078871917081917368, guid: 5bb64b69f9dff4b45a750d84cfb32388, type: 3}
       propertyPath: jumpSound
       value: 
-      objectReference: {fileID: 8300000, guid: e62c15b933515574bb44526659900810, type: 3}
+      objectReference: {fileID: 8300000, guid: bc305539724efed479f8351edc439300, type: 3}
     - target: {fileID: 9078871917081917368, guid: 5bb64b69f9dff4b45a750d84cfb32388, type: 3}
       propertyPath: audioManager
       value: 
@@ -26127,6 +26127,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1153776425079585311, guid: cbc6048788d08994d80fe799fe70367a, type: 3}
+      propertyPath: m_Volume
+      value: 0.173
+      objectReference: {fileID: 0}
     - target: {fileID: 1682888982741279631, guid: cbc6048788d08994d80fe799fe70367a, type: 3}
       propertyPath: m_Name
       value: AudioManager
