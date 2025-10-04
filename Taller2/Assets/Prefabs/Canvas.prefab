@@ -347,7 +347,7 @@ GameObject:
   - component: {fileID: 1022913672016013851}
   - component: {fileID: 5518953705319245655}
   m_Layer: 5
-  m_Name: Vida 1
+  m_Name: Vida
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -715,7 +715,7 @@ GameObject:
   - component: {fileID: 2352741116259974282}
   - component: {fileID: 1283336191097066216}
   m_Layer: 5
-  m_Name: Vida 0
+  m_Name: Vida
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1963,7 +1963,7 @@ GameObject:
   - component: {fileID: 9218730363106759054}
   - component: {fileID: 8378942333140069125}
   m_Layer: 5
-  m_Name: Vida 2
+  m_Name: Vida
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

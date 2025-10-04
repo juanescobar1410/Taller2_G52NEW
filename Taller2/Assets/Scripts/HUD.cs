@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -33,7 +33,7 @@ public class HUD : MonoBehaviour
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
-    public void A�adirItem(string nombre, int cantidad)
+    public void AñadirItem(string nombre, int cantidad)
     {
         if (!inventario.ContainsKey(nombre))
         {
@@ -62,6 +62,13 @@ public class HUD : MonoBehaviour
         if (pocionesObj != null) txtPociones = pocionesObj.GetComponent<TextMeshProUGUI>();
         if (llavesObj != null) txtLlaves = llavesObj.GetComponent<TextMeshProUGUI>();
 
+        var vidaObjs = GameObject.FindGameObjectsWithTag("Vida");
+        if (vidaObjs.Length > 0)
+        {
+            vidas = vidaObjs;
+        }
+
+
         ActualizarHUD();
     }
 
@@ -77,9 +84,18 @@ public class HUD : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-
         BuscarReferenciasUI();
+
+      
+        if (GameManager.Instance != null)
+        {
+            for (int i = 0; i < vidas.Length; i++)
+            {
+                vidas[i].SetActive(i < GameManager.Instance.GetVidas());
+            }
+        }
     }
+
 
     public void DesactivarVidas(int indice)
     {
