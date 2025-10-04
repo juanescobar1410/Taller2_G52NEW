@@ -4,6 +4,10 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+
+
+    private bool recibiendodanio;
+    public float fuerzaRebote = 3f;
     public float speed;
     public float jumpForce;
     public int MaxJumps;
@@ -33,6 +37,25 @@ public class PlayerController : MonoBehaviour
         LaunchFireball();
     }
 
+
+    public void RecibeDanio(Vector2 direccion, int cantDanio)
+    {
+        if (!recibiendodanio)
+        {
+            recibiendodanio = true;
+            Vector2 rebote = new Vector2(transform.position.x - direccion.x, 1).normalized;
+            rigidbody.AddForce(rebote * fuerzaRebote, ForceMode2D.Impulse);
+            Animation.SetBool("Daño", recibiendodanio);
+        }
+    }
+
+
+    public void desactivandoDanio()
+    {
+        recibiendodanio = false;
+        Animation.SetBool("Daño", recibiendodanio);
+    }
+
     bool itsinFloor()
     {
         RaycastHit2D raycast = Physics2D.BoxCast(boxCollider.bounds.center, new Vector2(boxCollider.bounds.size.x, boxCollider.bounds.size.y), 0f, Vector2.down, 0.1f, Terrain);
@@ -42,7 +65,7 @@ public class PlayerController : MonoBehaviour
     {
         float velocityY = rigidbody.linearVelocity.y;
 
-        
+
         if (Mathf.Abs(velocityY) < 0.01f)
             velocityY = 0f;
 
@@ -58,8 +81,7 @@ public class PlayerController : MonoBehaviour
             Animation.SetBool("IsGrounded", false);
         }
 
-
-        if (Input.GetKeyDown(KeyCode.Space) && JumpCount > 0)
+        if (Input.GetKeyDown(KeyCode.Space) && JumpCount > 0 && !recibiendodanio)
         {
             JumpCount--;
             rigidbody.linearVelocity = new Vector2(rigidbody.linearVelocity.x, 0f);
@@ -85,7 +107,7 @@ public class PlayerController : MonoBehaviour
 
         ManageOrientation(InputMovement);
     }
-    
+
     void ManageOrientation(float InputMovement)
     {
         if ((LookingRight == true && InputMovement < 0) || (LookingRight == false && InputMovement > 0))

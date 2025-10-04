@@ -17124,7 +17124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce00cbd1b0a65ed45ada373fbc8d7fb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tiempoEscena: {fileID: 0}
+  tiempoEscena: {fileID: 4014074662154005948}
 --- !u!1001 &1334245580
 PrefabInstance:
   m_ObjectHideFlags: 0
