@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
+//GOKUUUUUUUUUUUUUUUUUUUUU
+
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
