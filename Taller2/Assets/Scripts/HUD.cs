@@ -79,6 +79,18 @@ public class HUD : MonoBehaviour
         var pocionesObj = GameObject.Find("txtPociones");
         var llavesObj = GameObject.Find("txtLlaves");
 
+        var timerMinutesObj = GameObject.Find("txtTimerMinutes");
+        var timerSecondsObj = GameObject.Find("txtTimerSeconds");
+        var timerSeconds100Obj = GameObject.Find("txtTimerSeconds100");
+
+        var timer = FindAnyObjectByType<Timer>();
+        if (timer != null)
+        {
+            if (timerMinutesObj != null) timer.timerMinutes = timerMinutesObj.GetComponent<TextMeshProUGUI>();
+            if (timerSecondsObj != null) timer.timerSeconds = timerSecondsObj.GetComponent<TextMeshProUGUI>();
+            if (timerSeconds100Obj != null) timer.timerSeconds100 = timerSeconds100Obj.GetComponent<TextMeshProUGUI>();
+        }
+
         if (monedasObj != null) txtMonedas = monedasObj.GetComponent<TextMeshProUGUI>();
         if (pocionesObj != null) txtPociones = pocionesObj.GetComponent<TextMeshProUGUI>();
         if (llavesObj != null) txtLlaves = llavesObj.GetComponent<TextMeshProUGUI>();
