@@ -15,9 +15,7 @@ public class HUD : MonoBehaviour
     public TextMeshProUGUI txtMonedas;
     public TextMeshProUGUI txtPociones;
     public TextMeshProUGUI txtLlaves;
-    public TextMeshProUGUI txtPuntosHUD;
-
-    private int totalPuntos = 0;
+    public GameObject gameOverPanel;
 
 
     private void Awake()
@@ -49,43 +47,22 @@ public class HUD : MonoBehaviour
         Debug.Log($"Item recogido: {nombre} (+{cantidad}) | Totales: Monedas={inventario["Moneda"]}, Pociones={inventario["Pocion"]}, Llaves={inventario["Llave"]}");
     }
 
-    public void AñadirPuntos(int cantidad)
-    {
-        totalPuntos += cantidad;
-        ActualizarPuntos();
-        Debug.Log($"Puntos añadidos: {cantidad} | Total = {totalPuntos}");
-    }
-
-    private void ActualizarPuntos()
-    {
-        if (txtPuntosHUD != null)
-            txtPuntosHUD.text = totalPuntos.ToString();
-
-        
-    }
-
-    public int GetTotalPuntos() => totalPuntos;
-
     private void ActualizarHUD()
     {
         if (txtMonedas != null) txtMonedas.text = inventario["Moneda"].ToString();
         if (txtPociones != null) txtPociones.text = inventario["Pocion"].ToString();
         if (txtLlaves != null) txtLlaves.text = inventario["Llave"].ToString();
-        ActualizarPuntos();
     }
     private void BuscarReferenciasUI()
     {
         var monedasObj = GameObject.Find("txtMonedas");
         var pocionesObj = GameObject.Find("txtPociones");
         var llavesObj = GameObject.Find("txtLlaves");
-        var puntosObj = GameObject.Find("txtPuntosHUD");
-        var puntosFinalObj = GameObject.Find("txtPuntosResultados");
 
         if (monedasObj != null) txtMonedas = monedasObj.GetComponent<TextMeshProUGUI>();
         if (pocionesObj != null) txtPociones = pocionesObj.GetComponent<TextMeshProUGUI>();
         if (llavesObj != null) txtLlaves = llavesObj.GetComponent<TextMeshProUGUI>();
-        if (puntosObj != null) txtPuntosHUD = puntosObj.GetComponent<TextMeshProUGUI>();
-        
+
         var vidaObjs = GameObject.FindGameObjectsWithTag("Vida");
         if (vidaObjs.Length > 0)
         {
@@ -110,7 +87,7 @@ public class HUD : MonoBehaviour
     {
         BuscarReferenciasUI();
 
-      
+
         if (GameManager.Instance != null)
         {
             for (int i = 0; i < vidas.Length; i++)
@@ -119,6 +96,67 @@ public class HUD : MonoBehaviour
             }
         }
     }
+
+
+    public void MostrarGameOver()
+    {
+        if (gameOverPanel != null)
+        {
+            gameOverPanel.SetActive(true);
+        }
+    }
+
+    public void ReiniciarNivel()
+    {
+        Time.timeScale = 1f;
+
+        if (GameManager.Instance != null)
+            GameManager.Instance.ResetVidas(); 
+
+        ResetAll(); 
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+
+    public void IrAlMenu()
+    {
+        Time.timeScale = 1f; // reanuda el juego
+
+        // Destruir el HUD al volver al menú
+        if (HUD.Instance != null)
+        {
+            Destroy(HUD.Instance.gameObject);
+            HUD.Instance = null;
+        }
+
+        SceneManager.LoadScene("Menu");
+    }
+
+
+
+    public void ResetAll()
+    {
+        // Reset inventario
+        inventario["Moneda"] = 0;
+        inventario["Pocion"] = 0;
+        inventario["Llave"] = 0;
+        ActualizarHUD();
+
+        // Reset vidas (todas activas)
+        if (vidas != null && vidas.Length > 0)
+        {
+            foreach (GameObject vida in vidas)
+            {
+                if (vida != null)
+                    vida.SetActive(true);
+            }
+        }
+
+        // Ocultar panel Game Over
+        if (gameOverPanel != null)
+            gameOverPanel.SetActive(false);
+    }
+
 
 
     public void DesactivarVidas(int indice)

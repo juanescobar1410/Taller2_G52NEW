@@ -5,7 +5,6 @@ TagManager:
   serializedVersion: 3
   tags:
   - Vida
-  - Bola
   layers:
   - Default
   - TransparentFX
@@ -54,12 +53,6 @@ TagManager:
     locked: 0
   - name: Items
     uniqueID: 2341879173
-    locked: 0
-  - name: ENV
-    uniqueID: 2952086221
-    locked: 0
-  - name: Enemy
-    uniqueID: 3908679191
     locked: 0
   m_RenderingLayers:
   - Default

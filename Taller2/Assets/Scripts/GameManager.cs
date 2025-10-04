@@ -14,7 +14,8 @@ public class GameManager : MonoBehaviour
     private float Globaltime = 0;
     public float Globaltime1 { get => Globaltime; set => Globaltime = value; }
 
-    private int vidas = 3;
+    private int vidas;
+    private int maxVidas = 3;
 
     public HUD hud;
 
@@ -35,6 +36,12 @@ public class GameManager : MonoBehaviour
         Debug.Log("Tiempo global acumulado: " + Globaltime);
     }
 
+    public void ResetVidas()
+    {
+        vidas = maxVidas;
+    }
+
+
     public void PerderVida()
     {
         if (vidas > 0)
@@ -51,6 +58,10 @@ public class GameManager : MonoBehaviour
             {
                 Debug.Log("Game Over 😵");
                 // Aquí pones lógica de reinicio, game over, etc.
+                if (HUD.Instance != null)
+                {
+                    HUD.Instance.MostrarGameOver();
+                }
             }
         }
     }
@@ -69,11 +80,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
-
-
+    
     void Start()
     {
-
+        ResetVidas();          // siempre arrancamos con el máximo de vidas
+        SincronizarVidas(vidas); // aseguramos que el HUD esté en el mismo estado
     }
 
 
