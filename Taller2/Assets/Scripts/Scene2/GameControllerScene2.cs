@@ -1,4 +1,4 @@
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 
 public class GameControllerScene2 : MonoBehaviour
@@ -72,7 +72,7 @@ public class GameControllerScene2 : MonoBehaviour
     //Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -86,3 +86,4 @@ public class GameControllerScene2 : MonoBehaviour
         //}
     }
 }
+

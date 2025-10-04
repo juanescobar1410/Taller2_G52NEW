@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameControllerScene1 : MonoBehaviour
@@ -47,3 +47,4 @@ public class GameControllerScene1 : MonoBehaviour
 
     }
 }
+
