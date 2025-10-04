@@ -198,9 +198,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9460ca073c0c8c743bd62e89ec80bb8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fuerzaRebote: 3
   speed: 2.5
   jumpForce: 3.5
   MaxJumps: 2
   Terrain:
     serializedVersion: 2
     m_Bits: 8
+  fireballPrefab: {fileID: 1437732779545902505, guid: ddf6c7f1052f2f74aa271ed8e43ff4bd, type: 3}
+  jumpSound: {fileID: 8300000, guid: bc305539724efed479f8351edc439300, type: 3}

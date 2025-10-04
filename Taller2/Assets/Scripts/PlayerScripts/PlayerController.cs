@@ -49,11 +49,11 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-
+  
     public void desactivandoDanio()
     {
         recibiendodanio = false;
-        Animation.SetBool("Daño", recibiendodanio);
+        Animation.SetBool("Daño", recibiendodanio );
     }
 
     bool itsinFloor()
@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour
     {
         float velocityY = rigidbody.linearVelocity.y;
 
-
+        
         if (Mathf.Abs(velocityY) < 0.01f)
             velocityY = 0f;
 
@@ -107,7 +107,7 @@ public class PlayerController : MonoBehaviour
 
         ManageOrientation(InputMovement);
     }
-
+    
     void ManageOrientation(float InputMovement)
     {
         if ((LookingRight == true && InputMovement < 0) || (LookingRight == false && InputMovement > 0))
