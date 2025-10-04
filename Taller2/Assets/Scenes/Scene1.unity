@@ -124,6 +124,135 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1872492363628738303, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
   m_PrefabInstance: {fileID: 1274321294}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &38381879
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 38381881}
+  - component: {fileID: 38381880}
+  m_Layer: 0
+  m_Name: MusicManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &38381880
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38381879}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: a90afc3379f9b2743b65fb5b18278e17, type: 3}
+  m_Resource: {fileID: 8300000, guid: a90afc3379f9b2743b65fb5b18278e17, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.242
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &38381881
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38381879}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.44004768, y: 0.29526323, z: 0.022131028}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &58914109
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -176,6 +305,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -238,6 +371,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -248,114 +385,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1872492363628738303, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
   m_PrefabInstance: {fileID: 90186387}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &127069142
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1981028089023048670, guid: 03b161dad3396ed489e2c60afa5397e8, type: 3}
-      propertyPath: m_Name
-      value: Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 8930311649639339687, guid: 03b161dad3396ed489e2c60afa5397e8, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8930311649639339687, guid: 03b161dad3396ed489e2c60afa5397e8, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8930311649639339687, guid: 03b161dad3396ed489e2c60afa5397e8, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8930311649639339687, guid: 03b161dad3396ed489e2c60afa5397e8, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8930311649639339687, guid: 03b161dad3396ed489e2c60afa5397e8, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8930311649639339687, guid: 03b161dad3396ed489e2c60afa5397e8, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8930311649639339687, guid: 03b161dad3396ed489e2c60afa5397e8, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8930311649639339687, guid: 03b161dad3396ed489e2c60afa5397e8, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8930311649639339687, guid: 03b161dad3396ed489e2c60afa5397e8, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8930311649639339687, guid: 03b161dad3396ed489e2c60afa5397e8, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8930311649639339687, guid: 03b161dad3396ed489e2c60afa5397e8, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8930311649639339687, guid: 03b161dad3396ed489e2c60afa5397e8, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8930311649639339687, guid: 03b161dad3396ed489e2c60afa5397e8, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8930311649639339687, guid: 03b161dad3396ed489e2c60afa5397e8, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8930311649639339687, guid: 03b161dad3396ed489e2c60afa5397e8, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8930311649639339687, guid: 03b161dad3396ed489e2c60afa5397e8, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8930311649639339687, guid: 03b161dad3396ed489e2c60afa5397e8, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8930311649639339687, guid: 03b161dad3396ed489e2c60afa5397e8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8930311649639339687, guid: 03b161dad3396ed489e2c60afa5397e8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8930311649639339687, guid: 03b161dad3396ed489e2c60afa5397e8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 03b161dad3396ed489e2c60afa5397e8, type: 3}
---- !u!114 &127069143 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4014074662161417834, guid: 03b161dad3396ed489e2c60afa5397e8, type: 3}
-  m_PrefabInstance: {fileID: 127069142}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fb6a2d4e6821c6458599ab5c9dac58c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &155780672
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -408,6 +437,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -470,6 +503,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -532,6 +569,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -594,6 +635,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -661,6 +706,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -718,6 +767,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -780,6 +833,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -995,6 +1052,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1141,6 +1202,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1203,6 +1268,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1265,6 +1334,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15327,6 +15400,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15389,6 +15466,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15451,6 +15532,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15513,6 +15598,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15649,6 +15738,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15706,6 +15799,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15731,18 +15828,6 @@ PrefabInstance:
     - target: {fileID: 218613378740659466, guid: 5bb64b69f9dff4b45a750d84cfb32388, type: 3}
       propertyPath: m_TagString
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 1178488658399946308, guid: 5bb64b69f9dff4b45a750d84cfb32388, type: 3}
-      propertyPath: m_SortingLayer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1178488658399946308, guid: 5bb64b69f9dff4b45a750d84cfb32388, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1178488658399946308, guid: 5bb64b69f9dff4b45a750d84cfb32388, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1596420196748953788, guid: 5bb64b69f9dff4b45a750d84cfb32388, type: 3}
       propertyPath: m_Constraints
@@ -15792,6 +15877,14 @@ PrefabInstance:
       propertyPath: jumpForce
       value: 3.5
       objectReference: {fileID: 0}
+    - target: {fileID: 9078871917081917368, guid: 5bb64b69f9dff4b45a750d84cfb32388, type: 3}
+      propertyPath: jumpSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e62c15b933515574bb44526659900810, type: 3}
+    - target: {fileID: 9078871917081917368, guid: 5bb64b69f9dff4b45a750d84cfb32388, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 2021328015}
     - target: {fileID: 9078871917081917368, guid: 5bb64b69f9dff4b45a750d84cfb32388, type: 3}
       propertyPath: fireballPrefab
       value: 
@@ -15853,6 +15946,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15871,6 +15968,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1699172595217354200, guid: 8009acbfe70236d7c844ef558a58492c, type: 3}
+      propertyPath: collectSoundLlave
+      value: 
+      objectReference: {fileID: 8300000, guid: 4bf59c56991edb345bfa3ed6dd2f574b, type: 3}
     - target: {fileID: 2069920344786085191, guid: 8009acbfe70236d7c844ef558a58492c, type: 3}
       propertyPath: m_Name
       value: key
@@ -15972,6 +16073,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16512,6 +16617,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16759,6 +16868,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16821,6 +16934,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16883,6 +17000,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16940,6 +17061,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17047,6 +17172,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17109,6 +17238,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24850,6 +24983,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24912,6 +25049,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24934,6 +25075,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: health potion
       objectReference: {fileID: 0}
+    - target: {fileID: 3588511232556690694, guid: 7ffdca6691464eb6ebfe749c478de510, type: 3}
+      propertyPath: collectSoundPocion
+      value: 
+      objectReference: {fileID: 8300000, guid: 04db15e21807ec8429a75bb1facbf099, type: 3}
     - target: {fileID: 6494293137511488741, guid: 7ffdca6691464eb6ebfe749c478de510, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.3662024
@@ -25031,6 +25176,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25093,6 +25242,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25155,6 +25308,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25296,6 +25453,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25410,6 +25571,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25472,6 +25637,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25534,6 +25703,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25596,6 +25769,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25658,6 +25835,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25668,6 +25849,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1872492363628738303, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
   m_PrefabInstance: {fileID: 2016822079}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2021328015 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8606700043035152890, guid: cbc6048788d08994d80fe799fe70367a, type: 3}
+  m_PrefabInstance: {fileID: 2092400498}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e6d8a3576a7a949bf5def4c342f30f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2055018504
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25720,6 +25912,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25785,7 +25981,7 @@ PrefabInstance:
     - target: {fileID: 9072691383543204921, guid: d329491443af29b4a932af06e5562dcd, type: 3}
       propertyPath: tiempoEscena
       value: 
-      objectReference: {fileID: 127069143}
+      objectReference: {fileID: 4014074662154005948}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25843,6 +26039,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25905,6 +26105,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25915,6 +26119,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1872492363628738303, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
   m_PrefabInstance: {fileID: 2077378441}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2092400498
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1682888982741279631, guid: cbc6048788d08994d80fe799fe70367a, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629140847004284701, guid: cbc6048788d08994d80fe799fe70367a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 432.58276
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629140847004284701, guid: cbc6048788d08994d80fe799fe70367a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 223.82408
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629140847004284701, guid: cbc6048788d08994d80fe799fe70367a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.996609
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629140847004284701, guid: cbc6048788d08994d80fe799fe70367a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629140847004284701, guid: cbc6048788d08994d80fe799fe70367a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629140847004284701, guid: cbc6048788d08994d80fe799fe70367a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629140847004284701, guid: cbc6048788d08994d80fe799fe70367a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629140847004284701, guid: cbc6048788d08994d80fe799fe70367a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629140847004284701, guid: cbc6048788d08994d80fe799fe70367a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629140847004284701, guid: cbc6048788d08994d80fe799fe70367a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cbc6048788d08994d80fe799fe70367a, type: 3}
 --- !u!1001 &2111910485
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25967,6 +26228,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 3736185657406745027, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
+      propertyPath: collectSoundMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 1524810dbc1c5904eada253f6b90c832, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25977,6 +26242,183 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1872492363628738303, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
   m_PrefabInstance: {fileID: 2111910485}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4014074662154005948 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1055309308602682543, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+  m_PrefabInstance: {fileID: 5859323793761598743}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fb6a2d4e6821c6458599ab5c9dac58c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &5274866416009906805
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2127819896328487435, guid: ff9f389ffc4c851459037128df395658, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.168
+      objectReference: {fileID: 0}
+    - target: {fileID: 2127819896328487435, guid: ff9f389ffc4c851459037128df395658, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.389
+      objectReference: {fileID: 0}
+    - target: {fileID: 2127819896328487435, guid: ff9f389ffc4c851459037128df395658, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2127819896328487435, guid: ff9f389ffc4c851459037128df395658, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2127819896328487435, guid: ff9f389ffc4c851459037128df395658, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2127819896328487435, guid: ff9f389ffc4c851459037128df395658, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2127819896328487435, guid: ff9f389ffc4c851459037128df395658, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2127819896328487435, guid: ff9f389ffc4c851459037128df395658, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2127819896328487435, guid: ff9f389ffc4c851459037128df395658, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2127819896328487435, guid: ff9f389ffc4c851459037128df395658, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3298699307366120713, guid: ff9f389ffc4c851459037128df395658, type: 3}
+      propertyPath: m_Name
+      value: Enemy
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ff9f389ffc4c851459037128df395658, type: 3}
+--- !u!1001 &5859323793761598743
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 127749770045084893, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_Name
+      value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1383985534229224971, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2249952039475554811, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7225338458295228296, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9066187183863530589, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9066187183863530589, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9066187183863530589, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9066187183863530589, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9066187183863530589, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9066187183863530589, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9066187183863530589, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9066187183863530589, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9066187183863530589, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9066187183863530589, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9066187183863530589, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9066187183863530589, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9066187183863530589, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9066187183863530589, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9066187183863530589, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9066187183863530589, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9066187183863530589, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9066187183863530589, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9066187183863530589, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9066187183863530589, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -25992,4 +26434,7 @@ SceneRoots:
   - {fileID: 1546133796}
   - {fileID: 1058446241}
   - {fileID: 895812727}
-  - {fileID: 127069142}
+  - {fileID: 5859323793761598743}
+  - {fileID: 2092400498}
+  - {fileID: 38381881}
+  - {fileID: 5274866416009906805}
