@@ -53,10 +53,8 @@ public class GameControllerScene2 : MonoBehaviour
 
             Debug.Log("Resultados cargados en el panel");
         }
-        else
-        {
-            Debug.LogError(" No existe GameManager en la escena.");
-        }
+      
+        
     }
     //Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
