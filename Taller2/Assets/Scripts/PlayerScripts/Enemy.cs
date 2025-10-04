@@ -1,5 +1,6 @@
 using JetBrains.Annotations;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class Enemy : MonoBehaviour
     private Vector2 movement;
     private Animator animacion;
     private bool recibiendoDanio;
+    private bool haMuerto = false;
+    public int puntosPorMuerte = 50;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -75,7 +78,22 @@ public class Enemy : MonoBehaviour
             Vector2 rebote = new Vector2(transform.position.x - direccion.x, 1).normalized;
             rb.AddForce(rebote * fuerzaRebote, ForceMode2D.Impulse);
             Debug.Log("Recibiendo daño");
+            MatarEnemigo();
         }
+    }
+
+    private void MatarEnemigo()
+    {
+        if (haMuerto) return; // Evita doble conteo
+        haMuerto = true;
+
+        Debug.Log($"Enemigo destruido. +{puntosPorMuerte} puntos");
+
+        if (HUD.Instance != null)
+            HUD.Instance.AñadirPuntos(puntosPorMuerte);
+
+        // Aquí puedes agregar animación o efecto antes de destruir
+        Destroy(gameObject, 0.2f);
     }
 
     public void DesactivaDanio()

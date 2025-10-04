@@ -29,7 +29,7 @@ public class GameControllerScene1 : MonoBehaviour
         {
             GuardarTiempoEscena();
             lectorEscena("Scene2");
-            PanelTime.SetActive(false);
+            //PanelTime.SetActive(false);
         }
     }
     public void lectorEscena(string nameScene)
