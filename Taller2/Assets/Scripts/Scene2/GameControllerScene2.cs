@@ -1,84 +1,112 @@
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 
 public class GameControllerScene2 : MonoBehaviour
 {
     public Timer tiempoEscena;
-    public GameObject panelResultados;
-    public TextMeshProUGUI txtTiempoGlobal;
 
+    public GameObject panelResultados;
+    public GameObject panelTimer;
+
+    public TextMeshProUGUI txtPuntosResultados;
     public TextMeshProUGUI txtMonedasPanel;
     public TextMeshProUGUI txtPocionesPanel;
     public TextMeshProUGUI txtLlavesPanel;
 
+    private void Awake()
+    {
+        BuscarReferenciasUI();
+    }
+
     public void GuardarTiempoEscena()
     {
-        // Accedemos al stopTime
-        tiempoEscena.TimerStop();
-        float timeScene2 = tiempoEscena.StopTime1;
-        // Lo mandamos al GameManager
-        GameManager.Instance.SumaTimeGlobal(timeScene2);
+        if (tiempoEscena != null)
+        {
+            // Detenemos el timer y obtenemos el tiempo final
+            tiempoEscena.TimerStop();
+            float tiempoFinal = tiempoEscena.StopTime1;
 
-        Debug.Log("Tiempo de esta escena: " + timeScene2);
-        //Debug.Log("Tiempo global acumulado: " + GameManager.Instance.Globaltime1);
+            // Guardar en GameManager
+            GameManager.Instance.SumaTimeGlobal(tiempoFinal);
 
+            // Mostrar en UI
+            txtPuntosResultados.text = tiempoFinal.ToString("F2");
 
+            Debug.Log("⏱ Tiempo de esta escena: " + tiempoFinal);
+            Debug.Log("🧮 Tiempo global acumulado: " + GameManager.Instance.Globaltime1);
+        }
+        else
+        {
+            Debug.LogWarning("⚠️ No se encontró el Timer en la escena.");
+        }
+
+        // Actualizar ítems recolectados
+        if (HUD.Instance != null)
+        {
+            txtMonedasPanel.text = HUD.Instance.GetMonedas().ToString();
+            txtPocionesPanel.text = HUD.Instance.GetPociones().ToString();
+            txtLlavesPanel.text = HUD.Instance.GetLlaves().ToString();
+        }
+
+        // Activar panel de resultados
+        if (panelResultados != null) panelResultados.SetActive(true);
+        if (panelTimer != null) panelTimer.SetActive(false);
+
+        Debug.Log("📊 Resultados cargados en el panel");
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-
             GuardarTiempoEscena();
             Time.timeScale = 0f;
-
-            panelResultados.SetActive(true);
-
-            ActualizarResultados();
-
         }
     }
-    public void ActualizarResultados()
+
+    // 🔍 Busca referencias automáticamente en el Canvas (incluyendo objetos inactivos)
+    private void BuscarReferenciasUI()
     {
+        GameObject canvas = GameObject.Find("Canvas");
+        if (canvas == null)
+        {
+            Debug.LogError("❌ No se encontró el Canvas en la escena.");
+            return;
+        }
 
-        float tiempo = GameManager.Instance.Globaltime1;
+        Transform[] allChildren = canvas.GetComponentsInChildren<Transform>(true);
 
-        txtTiempoGlobal.text = tiempo.ToString("F2");
+        foreach (Transform child in allChildren)
+        {
+            switch (child.name)
+            {
+                case "PanelTime":
+                    tiempoEscena = child.GetComponentInChildren<Timer>();
+                    panelTimer = child.gameObject;
+                    break;
 
-        txtMonedasPanel.text = HUD.Instance.GetMonedas().ToString();
-        txtPocionesPanel.text = HUD.Instance.GetPociones().ToString();
-        txtLlavesPanel.text = HUD.Instance.GetLlaves().ToString();
+                case "panelResultados":
+                    panelResultados = child.gameObject;
+                    break;
 
-        Debug.Log("Resultados cargados en el panel");
+                case "txtPuntosResultados":
+                    txtPuntosResultados = child.GetComponent<TextMeshProUGUI>();
+                    break;
 
-        //if (GameManager.Instance != null)
-        //{
+                case "txtMonedasPanel":
+                    txtMonedasPanel = child.GetComponent<TextMeshProUGUI>();
+                    break;
 
-        //    float tiempo = GameManager.Instance.Globaltime1;
+                case "txtPocionesPanel":
+                    txtPocionesPanel = child.GetComponent<TextMeshProUGUI>();
+                    break;
 
+                case "txtLlavesPanel":
+                    txtLlavesPanel = child.GetComponent<TextMeshProUGUI>();
+                    break;
+            }
+        }
 
-        //    txtTiempoGlobal.text = tiempo.ToString("F2");
-
-        //    Debug.Log("Resultados cargados en el panel");
-        //}
-
-    }
-
-
-    //Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        //if (HUD.Instance != null)
-        //{
-        //    txtMonedasPanel.text = HUD.Instance.GetMonedas().ToString();
-        //    txtPocionesPanel.text = HUD.Instance.GetPociones().ToString();
-        //    txtLlavesPanel.text = HUD.Instance.GetLlaves().ToString();
-        //}
+        Debug.Log("✅ Referencias UI (incluyendo inactivos) encontradas correctamente.");
     }
 }
