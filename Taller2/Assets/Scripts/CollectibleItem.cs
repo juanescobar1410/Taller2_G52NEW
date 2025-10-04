@@ -26,9 +26,9 @@ public class CollectibleItem : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             Debug.Log("Name item " + itemName + "value item " + itemValue);
-            if (GameManager.Instance != null)
+            if (HUD.Instance != null)
             {
-                GameManager.Instance.AñadirItem(itemName, itemValue);
+                HUD.Instance.AñadirItem(itemName, itemValue);
             }
             Destroy(gameObject);
             AudioManager.Instance.ReproducirSonido(

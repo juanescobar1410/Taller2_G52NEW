@@ -1567,9 +1567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 969ffb461d3bd0b47a7d6238c6d0b1b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  txtMonedas: {fileID: 0}
-  txtPociones: {fileID: 0}
-  txtLlaves: {fileID: 0}
+  hud: {fileID: 969950016280901474, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
 --- !u!4 &1451523043
 Transform:
   m_ObjectHideFlags: 0

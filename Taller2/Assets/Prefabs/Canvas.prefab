@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3338785804579675348}
   - component: {fileID: 1603247631657263052}
   - component: {fileID: 18913839082962665}
+  - component: {fileID: 969950016280901474}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -104,6 +105,25 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &969950016280901474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127749770045084893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dea9e087de647646a3d3269cce0ef82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidas:
+  - {fileID: 2249952039475554811}
+  - {fileID: 1383985534229224971}
+  - {fileID: 7225338458295228296}
+  txtMonedas: {fileID: 3175816510456246515}
+  txtPociones: {fileID: 45217092239362217}
+  txtLlaves: {fileID: 119144167933582503}
 --- !u!1 &533976315293570613
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,7 +347,7 @@ GameObject:
   - component: {fileID: 1022913672016013851}
   - component: {fileID: 5518953705319245655}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Vida 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -695,7 +715,7 @@ GameObject:
   - component: {fileID: 2352741116259974282}
   - component: {fileID: 1283336191097066216}
   m_Layer: 5
-  m_Name: Image (2)
+  m_Name: Vida 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1943,7 +1963,7 @@ GameObject:
   - component: {fileID: 9218730363106759054}
   - component: {fileID: 8378942333140069125}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Vida 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
