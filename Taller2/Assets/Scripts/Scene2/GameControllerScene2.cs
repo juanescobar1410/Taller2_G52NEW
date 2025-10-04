@@ -36,27 +36,32 @@ public class GameControllerScene2 : MonoBehaviour
 
             ActualizarResultados();
 
-            // Mostrar resultados en consola también
-            //Debug.Log($"Resultados: Cerezas={GameManager.Instance.Cerezas}, Sandías={GameManager.Instance.Sandias}");
         }
     }
     public void ActualizarResultados()
     {
-        if (GameManager.Instance != null)
-        {
-            // Lee los contadores de GameManager
-            //int totalCerezas = GameManager.Instance.Cerezas;
-            //int totalSandias = GameManager.Instance.Sandias;
-            float tiempo = GameManager.Instance.Globaltime1;
 
-            // Muestra en los textos
-            //txtCerezas.text = totalCerezas.ToString();
-            //txtSandias.text = totalSandias.ToString();
-            txtTiempoGlobal.text = tiempo.ToString("F2");
+        float tiempo = GameManager.Instance.Globaltime1;
 
-            Debug.Log("Resultados cargados en el panel");
-        }
-      
+        txtTiempoGlobal.text = tiempo.ToString("F2");
+
+        txtMonedasPanel.text = HUD.Instance.GetMonedas().ToString();
+        txtPocionesPanel.text = HUD.Instance.GetPociones().ToString();
+        txtLlavesPanel.text = HUD.Instance.GetLlaves().ToString();
+
+        Debug.Log("Resultados cargados en el panel");
+
+        //if (GameManager.Instance != null)
+        //{
+
+        //    float tiempo = GameManager.Instance.Globaltime1;
+
+
+        //    txtTiempoGlobal.text = tiempo.ToString("F2");
+
+        //    Debug.Log("Resultados cargados en el panel");
+        //}
+
     }
 
 
@@ -69,11 +74,11 @@ public class GameControllerScene2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (HUD.Instance != null)
-        {
-            txtMonedasPanel.text = HUD.Instance.GetMonedas().ToString();
-            txtPocionesPanel.text = HUD.Instance.GetPociones().ToString();
-            txtLlavesPanel.text = HUD.Instance.GetLlaves().ToString();
-        }
+        //if (HUD.Instance != null)
+        //{
+        //    txtMonedasPanel.text = HUD.Instance.GetMonedas().ToString();
+        //    txtPocionesPanel.text = HUD.Instance.GetPociones().ToString();
+        //    txtLlavesPanel.text = HUD.Instance.GetLlaves().ToString();
+        //}
     }
 }
