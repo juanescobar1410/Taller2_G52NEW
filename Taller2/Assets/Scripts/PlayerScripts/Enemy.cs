@@ -94,12 +94,14 @@ public class Enemy : MonoBehaviour
 
         // Aquí puedes agregar animación o efecto antes de destruir
         Destroy(gameObject, 0.2f);
+        
     }
 
     public void DesactivaDanio()
     {
         recibiendoDanio = false;
         rb.linearVelocity= Vector2.zero;
+        
     }
 
 
