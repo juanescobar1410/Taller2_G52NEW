@@ -4,20 +4,25 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+    public float fuerzaRebote = 10f;
     public float speed;
     public float jumpForce;
     public int MaxJumps;
     public LayerMask Terrain;
     public GameObject fireballPrefab;
-    
+    [SerializeField] private Transform controladorPared;
+    [SerializeField] private Vector3 dimensionesCajaPared;
+    private bool enPared;
+    private bool deslizando;
+    [SerializeField] private float velocidadDeslizar;
     private new Rigidbody2D rigidbody;
     private BoxCollider2D boxCollider;
     private bool LookingRight = true;
     private int JumpCount;
     private Animator Animation;
     private GameObject currentFireball = null;
-
-
+    private bool recibiendodanio;
+   
     void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
@@ -30,6 +35,22 @@ public class PlayerController : MonoBehaviour
         MovementProccess();
         JumpProccess();
         LaunchFireball();
+    }
+
+    public void RecibeDanio(Vector2  direccion, int cantDanio)
+    {
+        if (!recibiendodanio)
+        {
+            recibiendodanio = true;
+            Vector2 rebote = new Vector2(transform.position.x - direccion.x, 1).normalized;
+            rigidbody.AddForce(rebote * fuerzaRebote, ForceMode2D.Impulse);
+            Animation.SetBool("Daño", recibiendodanio);
+        }
+    }
+
+    public void desactivandoDanio()
+    {
+        recibiendodanio = false;
     }
 
     bool itsinFloor()
@@ -82,6 +103,8 @@ public class PlayerController : MonoBehaviour
         rigidbody.linearVelocity = new Vector2(InputMovement * speed, rigidbody.linearVelocity.y);
 
         ManageOrientation(InputMovement);
+
+        
     }
     
     void ManageOrientation(float InputMovement)
@@ -106,6 +129,8 @@ public class PlayerController : MonoBehaviour
     {
         currentFireball = null;
     }
+
+  
 
 }
 
