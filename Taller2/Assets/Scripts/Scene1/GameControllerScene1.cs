@@ -6,6 +6,7 @@ public class GameControllerScene1 : MonoBehaviour
 
 
     public Timer tiempoEscena;
+    public GameObject PanelTime;
 
 
     public void GuardarTiempoEscena()
@@ -28,6 +29,7 @@ public class GameControllerScene1 : MonoBehaviour
         {
             GuardarTiempoEscena();
             lectorEscena("Scene2");
+            //PanelTime.SetActive(false);
         }
     }
     public void lectorEscena(string nameScene)

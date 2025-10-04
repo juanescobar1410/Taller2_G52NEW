@@ -1,6 +1,6 @@
 using JetBrains.Annotations;
 using UnityEngine;
-using UnityEngine.Video;
+using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
 {
@@ -13,23 +13,14 @@ public class Enemy : MonoBehaviour
     private Vector2 movement;
     private Animator animacion;
     private bool recibiendoDanio;
-    private bool muerto;
-    public int vida = 3;
+    private bool haMuerto = false;
+    public int puntosPorMuerte = 50;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animacion = GetComponent<Animator>();
     }
     void Update()
-    {
-        Movimiento();
-
-
-        animacion.SetBool("enMovimiento", enMovimiento);
-        animacion.SetBool("muerto", muerto);
-    }
-
-    private void Movimiento()
     {
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
         if (distanceToPlayer < detectionRadius)
@@ -51,8 +42,9 @@ public class Enemy : MonoBehaviour
             movement = Vector2.zero;
             enMovimiento = false;
         }
-        if (!recibiendoDanio)
+        if(!recibiendoDanio) 
             rb.MovePosition(rb.position + movement * speed * Time.deltaTime);
+        animacion.SetBool("enMovimiento", enMovimiento);
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
@@ -82,33 +74,33 @@ public class Enemy : MonoBehaviour
     {
         if (!recibiendoDanio)
         {
-            vida -= cantDanio;
             recibiendoDanio = true;
-            if (vida <= 0)
-            {
-                muerto = true;
-                enMovimiento = false;
-                
-            }
-            else
-            {
-                Vector2 rebote = new Vector2(transform.position.x - direccion.x, 1).normalized;
-                rb.AddForce(rebote * fuerzaRebote, ForceMode2D.Impulse);
-                animacion.SetBool("Dano", true);
-            }
-            
-
+            Vector2 rebote = new Vector2(transform.position.x - direccion.x, 1).normalized;
+            rb.AddForce(rebote * fuerzaRebote, ForceMode2D.Impulse);
             Debug.Log("Recibiendo daño");
+            MatarEnemigo();
         }
+    }
+
+    private void MatarEnemigo()
+    {
+        if (haMuerto) return; // Evita doble conteo
+        haMuerto = true;
+
+        Debug.Log($"Enemigo destruido. +{puntosPorMuerte} puntos");
+
+        if (HUD.Instance != null)
+            HUD.Instance.AñadirPuntos(puntosPorMuerte);
+
+        // Aquí puedes agregar animación o efecto antes de destruir
+        Destroy(gameObject, 0.2f);
     }
 
     public void DesactivaDanio()
     {
         recibiendoDanio = false;
-        rb.linearVelocity = Vector2.zero;
-        animacion.SetBool("Dano", false); 
+        rb.linearVelocity= Vector2.zero;
     }
-
 
 
 }

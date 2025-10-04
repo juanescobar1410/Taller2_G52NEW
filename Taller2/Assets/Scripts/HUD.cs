@@ -15,7 +15,9 @@ public class HUD : MonoBehaviour
     public TextMeshProUGUI txtMonedas;
     public TextMeshProUGUI txtPociones;
     public TextMeshProUGUI txtLlaves;
+    public TextMeshProUGUI txtPuntosHUD;
 
+    private int totalPuntos = 0;
 
     private void Awake()
     {
@@ -46,22 +48,43 @@ public class HUD : MonoBehaviour
         Debug.Log($"Item recogido: {nombre} (+{cantidad}) | Totales: Monedas={inventario["Moneda"]}, Pociones={inventario["Pocion"]}, Llaves={inventario["Llave"]}");
     }
 
+    public void AñadirPuntos(int cantidad)
+    {
+        totalPuntos += cantidad;
+        ActualizarPuntos();
+        Debug.Log($"Puntos añadidos: {cantidad} | Total = {totalPuntos}");
+    }
+
+    private void ActualizarPuntos()
+    {
+        if (txtPuntosHUD != null)
+            txtPuntosHUD.text = totalPuntos.ToString();
+
+        
+    }
+
+    public int GetTotalPuntos() => totalPuntos;
+
     private void ActualizarHUD()
     {
         if (txtMonedas != null) txtMonedas.text = inventario["Moneda"].ToString();
         if (txtPociones != null) txtPociones.text = inventario["Pocion"].ToString();
         if (txtLlaves != null) txtLlaves.text = inventario["Llave"].ToString();
+        ActualizarPuntos();
     }
     private void BuscarReferenciasUI()
     {
         var monedasObj = GameObject.Find("txtMonedas");
         var pocionesObj = GameObject.Find("txtPociones");
         var llavesObj = GameObject.Find("txtLlaves");
+        var puntosObj = GameObject.Find("txtPuntosHUD");
+        var puntosFinalObj = GameObject.Find("txtPuntosResultados");
 
         if (monedasObj != null) txtMonedas = monedasObj.GetComponent<TextMeshProUGUI>();
         if (pocionesObj != null) txtPociones = pocionesObj.GetComponent<TextMeshProUGUI>();
         if (llavesObj != null) txtLlaves = llavesObj.GetComponent<TextMeshProUGUI>();
-
+        if (puntosObj != null) txtPuntosHUD = puntosObj.GetComponent<TextMeshProUGUI>();
+        
         var vidaObjs = GameObject.FindGameObjectsWithTag("Vida");
         if (vidaObjs.Length > 0)
         {
