@@ -26576,6 +26576,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Vida
       objectReference: {fileID: 0}
+    - target: {fileID: 7860163726733391525, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 76.187
+      objectReference: {fileID: 0}
+    - target: {fileID: 7860163726733391525, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 38.092964
+      objectReference: {fileID: 0}
     - target: {fileID: 9066187183863530589, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
       propertyPath: m_Pivot.x
       value: 0

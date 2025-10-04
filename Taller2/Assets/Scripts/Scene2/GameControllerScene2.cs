@@ -11,6 +11,8 @@ public class GameControllerScene2 : MonoBehaviour
     public TextMeshProUGUI txtPocionesPanel;
     public TextMeshProUGUI txtLlavesPanel;
 
+    public TextMeshProUGUI txtVidasPanel;
+
     public void GuardarTiempoEscena()
     {
         // Accedemos al stopTime
@@ -48,6 +50,8 @@ public class GameControllerScene2 : MonoBehaviour
         txtMonedasPanel.text = HUD.Instance.GetMonedas().ToString();
         txtPocionesPanel.text = HUD.Instance.GetPociones().ToString();
         txtLlavesPanel.text = HUD.Instance.GetLlaves().ToString();
+
+        txtVidasPanel.text = GameManager.Instance.GetVidas().ToString();
 
         Debug.Log("Resultados cargados en el panel");
 

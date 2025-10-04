@@ -17,6 +17,7 @@ public class HUD : MonoBehaviour
     public TextMeshProUGUI txtLlaves;
 
 
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
