@@ -7,6 +7,9 @@ public class GameControllerScene2 : MonoBehaviour
     public GameObject panelResultados;
     public TextMeshProUGUI txtTiempoGlobal;
 
+    public TextMeshProUGUI txtMonedasPanel;
+    public TextMeshProUGUI txtPocionesPanel;
+    public TextMeshProUGUI txtLlavesPanel;
 
     public void GuardarTiempoEscena()
     {
@@ -53,11 +56,10 @@ public class GameControllerScene2 : MonoBehaviour
 
             Debug.Log("Resultados cargados en el panel");
         }
-        else
-        {
-            Debug.LogError(" No existe GameManager en la escena.");
-        }
+      
     }
+
+
     //Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -67,6 +69,11 @@ public class GameControllerScene2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (HUD.Instance != null)
+        {
+            txtMonedasPanel.text = HUD.Instance.GetMonedas().ToString();
+            txtPocionesPanel.text = HUD.Instance.GetPociones().ToString();
+            txtLlavesPanel.text = HUD.Instance.GetLlaves().ToString();
+        }
     }
 }
