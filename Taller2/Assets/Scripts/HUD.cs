@@ -16,6 +16,9 @@ public class HUD : MonoBehaviour
     public TextMeshProUGUI txtPociones;
     public TextMeshProUGUI txtLlaves;
     public GameObject gameOverPanel;
+    public TextMeshProUGUI txtPuntosHUD;
+
+    private int totalPuntos = 0;
 
 
     private void Awake()
@@ -46,6 +49,23 @@ public class HUD : MonoBehaviour
         ActualizarHUD();
         Debug.Log($"Item recogido: {nombre} (+{cantidad}) | Totales: Monedas={inventario["Moneda"]}, Pociones={inventario["Pocion"]}, Llaves={inventario["Llave"]}");
     }
+
+    public void AñadirPuntos(int cantidad)
+    {
+        totalPuntos += cantidad;
+        ActualizarPuntos();
+        Debug.Log($"Puntos añadidos: {cantidad} | Total = {totalPuntos}");
+    }
+
+    private void ActualizarPuntos()
+    {
+        if (txtPuntosHUD != null)
+            txtPuntosHUD.text = totalPuntos.ToString();
+
+
+    }
+
+    public int GetTotalPuntos() => totalPuntos;
 
     private void ActualizarHUD()
     {
