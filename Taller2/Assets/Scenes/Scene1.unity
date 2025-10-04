@@ -319,6 +319,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1872492363628738303, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
   m_PrefabInstance: {fileID: 58914109}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &74442575 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2249952039475554811, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+  m_PrefabInstance: {fileID: 5859323793761598743}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &90186387
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26322,6 +26327,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 969950016280901474, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: 'vidas.Array.data[0]'
+      value: 
+      objectReference: {fileID: 74442575}
     - target: {fileID: 1383985534229224971, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
       propertyPath: m_IsActive
       value: 1
