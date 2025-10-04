@@ -15,6 +15,7 @@ public class HUD : MonoBehaviour
     public TextMeshProUGUI txtMonedas;
     public TextMeshProUGUI txtPociones;
     public TextMeshProUGUI txtLlaves;
+    public GameObject gameOverPanel;
 
 
     private void Awake()
@@ -86,7 +87,7 @@ public class HUD : MonoBehaviour
     {
         BuscarReferenciasUI();
 
-      
+
         if (GameManager.Instance != null)
         {
             for (int i = 0; i < vidas.Length; i++)
@@ -95,6 +96,67 @@ public class HUD : MonoBehaviour
             }
         }
     }
+
+
+    public void MostrarGameOver()
+    {
+        if (gameOverPanel != null)
+        {
+            gameOverPanel.SetActive(true);
+        }
+    }
+
+    public void ReiniciarNivel()
+    {
+        Time.timeScale = 1f;
+
+        if (GameManager.Instance != null)
+            GameManager.Instance.ResetVidas(); 
+
+        ResetAll(); 
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+
+    public void IrAlMenu()
+    {
+        Time.timeScale = 1f; // reanuda el juego
+
+        // Destruir el HUD al volver al menú
+        if (HUD.Instance != null)
+        {
+            Destroy(HUD.Instance.gameObject);
+            HUD.Instance = null;
+        }
+
+        SceneManager.LoadScene("Menu");
+    }
+
+
+
+    public void ResetAll()
+    {
+        // Reset inventario
+        inventario["Moneda"] = 0;
+        inventario["Pocion"] = 0;
+        inventario["Llave"] = 0;
+        ActualizarHUD();
+
+        // Reset vidas (todas activas)
+        if (vidas != null && vidas.Length > 0)
+        {
+            foreach (GameObject vida in vidas)
+            {
+                if (vida != null)
+                    vida.SetActive(true);
+            }
+        }
+
+        // Ocultar panel Game Over
+        if (gameOverPanel != null)
+            gameOverPanel.SetActive(false);
+    }
+
 
 
     public void DesactivarVidas(int indice)

@@ -319,11 +319,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1872492363628738303, guid: 9e79ed43589d793b88a379659d4fc141, type: 3}
   m_PrefabInstance: {fileID: 58914109}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &74442575 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2249952039475554811, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
-  m_PrefabInstance: {fileID: 5859323793761598743}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &90186387
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26327,21 +26322,89 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 969950016280901474, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
-      propertyPath: 'vidas.Array.data[0]'
-      value: 
-      objectReference: {fileID: 74442575}
-    - target: {fileID: 1383985534229224971, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+    - target: {fileID: 127749770045084893, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1383985534229224971, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_TagString
+      value: Vida
       objectReference: {fileID: 0}
     - target: {fileID: 2249952039475554811, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
-      propertyPath: m_IsActive
+      propertyPath: m_TagString
+      value: Vida
+      objectReference: {fileID: 0}
+    - target: {fileID: 2652310917246751315, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2652310917246751315, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2652310917246751315, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781531460448305372, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7225338458295228296, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
-      propertyPath: m_IsActive
+    - target: {fileID: 4781531460448305372, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781531460448305372, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781531460448305372, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5859323793761598744}
+    - target: {fileID: 4781531460448305372, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781531460448305372, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReiniciarNivel
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781531460448305372, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: HUD, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781531460448305372, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781531460448305372, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7014164165835382926, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7225338458295228296, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_TagString
+      value: Vida
+      objectReference: {fileID: 0}
+    - target: {fileID: 7536337737315552966, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5859323793761598744}
+    - target: {fileID: 7536337737315552966, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: IrAlMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 7536337737315552966, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: HUD, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435576729105955818, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+      propertyPath: m_text
+      value: GAME OVER :C
       objectReference: {fileID: 0}
     - target: {fileID: 9066187183863530589, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
       propertyPath: m_Pivot.x
@@ -26428,6 +26491,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+--- !u!114 &5859323793761598744 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 969950016280901474, guid: 95e6d091f024f9449a9ce82dbf431fdf, type: 3}
+  m_PrefabInstance: {fileID: 5859323793761598743}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dea9e087de647646a3d3269cce0ef82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

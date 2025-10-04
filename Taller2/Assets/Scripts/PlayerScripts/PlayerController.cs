@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class PlayerController : MonoBehaviour
 {
@@ -103,6 +104,7 @@ public class PlayerController : MonoBehaviour
             currentFireball.GetComponent<Fireball>().direction = LookingRight ? 1 : -1;
         }
     }
+
 
     public void ClearFireball()
     {
